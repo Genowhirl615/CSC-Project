@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="csc436.john.csc436">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hngr_chicken"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Screens.SplashScreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Screens.AddInventoryScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.AboutScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.ComingSoonScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.ListInventoryScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.EditInventoryScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.SearchResultsScreen"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".Screens.CameraScreen"
+            android:label="Scan Barcode" />
+        <activity android:name=".Screens.ScannerScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.FavoriteScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.HomeScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Screens.SearchScreen"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
